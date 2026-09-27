@@ -11,3 +11,4 @@ mlruns/
 .env
 *.zip
 .tmp-ui/
+/output/pdf/
