@@ -148,6 +148,14 @@ Replace these after publishing:
 
 The latest measured results are documented in [docs/BENCHMARK_RESULTS.md](docs/BENCHMARK_RESULTS.md). The current injection artifact is experimental because it has not yet met the 90% recall release gate.
 
+## Project documentation
+
+- [Student build roadmap](docs/STUDENT_BUILD_ROADMAP.md): a teaching sequence from architecture and data through training, testing, and public v0.2 deployment.
+- [Current implementation status](docs/CURRENT_IMPLEMENTATION_STATUS.md): what is complete, what has been verified, and what remains before v0.2 can be declared released.
+- [Architecture and security boundaries](docs/ARCHITECTURE.md)
+- [Benchmark results](docs/BENCHMARK_RESULTS.md)
+- [Release checklist](docs/RELEASE_CHECKLIST.md)
+
 ## Limitations
 
 This v0.2 detector uses a small, primarily English dataset. It does not guarantee protection against adaptive, multilingual, indirect, or multi-turn attacks. The public demo is stateless and must only receive synthetic data.
