@@ -1,0 +1,14 @@
+services:
+  gateway:
+    build: .
+    ports:
+      - "7860:7860"
+    environment:
+      MODEL_PATH: /models/model.skops
+      MODEL_SHA256: ${MODEL_SHA256:-}
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      GEMINI_MODEL: ${GEMINI_MODEL:-gemini-3.8-flash}
+    volumes:
+      - ./artifacts:/models:ro
+    restart: unless-stopped
+

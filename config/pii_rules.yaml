@@ -1,0 +1,13 @@
+version: pii-v0.2.0
+entities:
+  EMAIL:
+    replacement: EMAIL
+  PHONE_IN:
+    replacement: PHONE
+  PAN:
+    replacement: PAN
+  AADHAAR:
+    replacement: AADHAAR
+  CREDIT_CARD:
+    replacement: CREDIT_CARD
+

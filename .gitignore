@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+node_modules/
+frontend/dist/
+artifacts/*
+!artifacts/.gitkeep
+mlruns/
+.env
+*.zip
+.tmp-ui/

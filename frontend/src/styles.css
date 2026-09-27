@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family: "Manrope", sans-serif;
+  color: #e7edf4;
+  background: #071018;
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: radial-gradient(circle at 85% 5%, #12313d 0, transparent 32%), #071018; }
+button, textarea { font: inherit; }
+button { cursor: pointer; }
+main { width: min(1180px, calc(100% - 32px)); margin: 0 auto; padding: 56px 0 32px; }
+.hero { display: flex; justify-content: space-between; gap: 30px; align-items: flex-start; margin-bottom: 30px; }
+.eyebrow { color: #59dfc7; font: 500 12px "DM Mono"; letter-spacing: .18em; }
+h1 { margin: 8px 0 12px; max-width: 720px; font-size: clamp(42px, 7vw, 78px); line-height: .96; letter-spacing: -.055em; }
+.lede { max-width: 680px; color: #9aabba; font-size: 17px; line-height: 1.65; }
+.version-pill { border: 1px solid #294252; border-radius: 999px; padding: 10px 14px; color: #a9bac7; font: 12px "DM Mono"; white-space: nowrap; }
+.notice { margin-bottom: 18px; padding: 13px 16px; border-left: 3px solid #eab65a; background: #eab65a13; color: #dcc79e; font-size: 13px; }
+.workspace { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px; }
+.panel { min-height: 500px; padding: 24px; border: 1px solid #1c3442; border-radius: 16px; background: #0c1821d9; box-shadow: 0 24px 80px #0005; }
+.panel-title { display: flex; align-items: center; gap: 10px; margin-bottom: 22px; color: #c8d5df; font-size: 14px; font-weight: 600; }
+.panel-title span { color: #59dfc7; font: 12px "DM Mono"; }
+.examples { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.examples button { padding: 7px 10px; border: 1px solid #28414f; border-radius: 7px; color: #9fb1bf; background: #10222d; font-size: 12px; }
+.examples button:hover { border-color: #59dfc7; color: #dffbf5; }
+textarea { width: 100%; height: 260px; resize: vertical; padding: 16px; border: 1px solid #28414f; border-radius: 10px; outline: none; color: #e8eff5; background: #071119; font: 14px/1.7 "DM Mono"; }
+textarea:focus { border-color: #59dfc7; box-shadow: 0 0 0 3px #59dfc71a; }
+.counter { margin: 8px 0 18px; color: #627887; text-align: right; font: 11px "DM Mono"; }
+.actions { display: flex; justify-content: flex-end; gap: 10px; }
+.actions button { padding: 11px 16px; border-radius: 8px; font-weight: 700; }
+.actions button:disabled { cursor: wait; opacity: .55; }
+.primary { border: 1px solid #59dfc7; background: #59dfc7; color: #071119; }
+.secondary { border: 1px solid #34505f; background: transparent; color: #c3d0d9; }
+.empty { display: grid; place-items: center; min-height: 380px; color: #647986; text-align: center; }
+.decision { display: inline-block; margin-bottom: 20px; padding: 8px 12px; border-radius: 6px; font: 600 13px "DM Mono"; }
+.decision.allow { color: #65e1a1; background: #65e1a117; }
+.decision.redact { color: #eab65a; background: #eab65a17; }
+.decision.block { color: #ff7d7d; background: #ff7d7d17; }
+.metric-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.metric-grid div { padding: 13px; border: 1px solid #1d3543; border-radius: 9px; background: #09141c; }
+.metric-grid label, .section-label { display: block; margin-bottom: 7px; color: #718895; font-size: 11px; }
+.metric-grid strong { font: 500 18px "DM Mono"; }
+.reason-list, .entities { display: flex; flex-wrap: wrap; gap: 7px; margin: 16px 0; }
+.reason-list code, .entities span { padding: 5px 7px; border-radius: 5px; color: #9db0bc; background: #152630; font: 11px "DM Mono"; }
+.section-label { margin-top: 18px; text-transform: uppercase; letter-spacing: .1em; }
+pre, .response-text { overflow: auto; margin: 0; padding: 14px; border: 1px solid #1d3543; border-radius: 9px; white-space: pre-wrap; overflow-wrap: anywhere; color: #d4dee5; background: #09141c; font: 13px/1.6 "DM Mono"; }
+.response-text { font-family: "Manrope"; }
+.output-note { margin-top: 8px; color: #eab65a; font-size: 12px; }
+.error { margin-top: 15px; color: #ff9393; font-size: 13px; }
+footer { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 18px; }
+footer div { padding: 12px 14px; border-top: 1px solid #1c3442; color: #889ca8; font: 11px "DM Mono"; overflow-wrap: anywhere; }
+footer span { display: block; margin-bottom: 5px; color: #4f6876; }
+@media (max-width: 800px) {
+  main { padding-top: 30px; }
+  .hero { display: block; }
+  .version-pill { display: inline-block; margin-top: 12px; }
+  .workspace { grid-template-columns: 1fr; }
+  footer { grid-template-columns: repeat(2, 1fr); }
+  .metric-grid { grid-template-columns: 1fr; }
+}
+

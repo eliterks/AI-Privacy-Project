@@ -1,0 +1,12 @@
+{
+  "engine_version": "pii-v0.2.0",
+  "dataset": "synthetic-regression-v0.1.0",
+  "examples": 3000,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "entities": ["AADHAAR", "CREDIT_CARD", "EMAIL", "PAN", "PHONE_IN"],
+  "release_passed": true,
+  "limitation": "Generated from the same format and checksum rules; this is a regression suite, not independent real-world validation."
+}
+

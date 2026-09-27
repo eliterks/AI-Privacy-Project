@@ -1,0 +1,23 @@
+{
+  "status": "experimental",
+  "promoted": false,
+  "model_version": "0.1.0",
+  "dataset_revision": "4f61ecb038e9c3fb77e21034b22511b523772cdd",
+  "decision_threshold": 0.455,
+  "metrics": {
+    "accuracy": 0.9051724137931034,
+    "precision": 0.9622641509433962,
+    "recall": 0.85,
+    "f1": 0.9026548672566371,
+    "roc_auc": 0.9601190476190476,
+    "benign_fpr": 0.03571428571428571,
+    "hard_benign_fpr": 0.04,
+    "confusion_matrix": [[54, 2], [9, 51]]
+  },
+  "release_gate": {
+    "minimum_recall": 0.9,
+    "maximum_hard_benign_fpr": 0.05,
+    "passed": false
+  }
+}
+

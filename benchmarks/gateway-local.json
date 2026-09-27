@@ -1,0 +1,11 @@
+{
+  "gateway_version": "0.2.0",
+  "environment": "local Windows sandbox, loopback HTTP, synthetic smoke classifier",
+  "requests": 20,
+  "median_ms": 3.618,
+  "p95_ms": 4.695,
+  "target_p95_ms": 100,
+  "passed": true,
+  "note": "This measures gateway analysis overhead only and excludes Gemini generation."
+}
+

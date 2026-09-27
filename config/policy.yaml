@@ -1,0 +1,10 @@
+version: policy-v0.2.0
+injection_threshold: model
+rules:
+  block_entities:
+    - AADHAAR
+  redact_entities:
+    - EMAIL
+    - PHONE_IN
+    - PAN
+    - CREDIT_CARD
